@@ -1,0 +1,52 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(066e8ddf-f304-4527-a0de-b0f90e52e78f), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/benomac/code/scala/shopping/shopping/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:43:10: constructor cannot be instantiated to expected type;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (T1, T2)[0m
+[0m[[0m[31merror[0m] [0m[0m required: Char[0m
+[0m[[0m[31merror[0m] [0m[0m    for ((key,value) <- items) yield {[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:44:19: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Char[0m
+[0m[[0m[31merror[0m] [0m[0m        if(prices(key).numForDeal == 0) {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:45:18: value * is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m          (value * prices(key).price)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:45:27: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Char[0m
+[0m[[0m[31merror[0m] [0m[0m          (value * prices(key).price)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:47:25: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m          priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:47:39: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Char[0m
+[0m[[0m[31merror[0m] [0m[0m          priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:47:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m          priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:47:77: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: Char[0m
+[0m[[0m[31merror[0m] [0m[0m          priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 23 Mar 2021, 19:04:53[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

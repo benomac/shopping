@@ -1,43 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:20:5: not found: value yiels[0m
-[0m[[0m[31merror[0m] [0m[0m  } yiels (x -> i));toMap[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:20:21: not found: value toMap[0m
-[0m[[0m[31merror[0m] [0m[0m  } yiels (x -> i));toMap[0m
-[0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:47:23: value withFilter is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m  for ((key,value) <- tobuy) {[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:48:17: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m      if(prices(key).num_for_deal == 0) {[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:49:32: value * is not a member of Any[0m
-[0m[[0m[31merror[0m] [0m[0m        total = total + (value * prices(key).price)[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:49:41: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m        total = total + (value * prices(key).price)[0m
-[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:51:25: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m        var tot = spesh(value, prices(key).price, prices(key).num_for_deal, prices(key).price_4_deal)[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:51:39: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m        var tot = spesh(value, prices(key).price, prices(key).num_for_deal, prices(key).price_4_deal)[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:51:58: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m        var tot = spesh(value, prices(key).price, prices(key).num_for_deal, prices(key).price_4_deal)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:51:84: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
-[0m[[0m[31merror[0m] [0m[0m required: Char[0m
-[0m[[0m[31merror[0m] [0m[0m        var tot = spesh(value, prices(key).price, prices(key).num_for_deal, prices(key).price_4_deal)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Main.scala:63:7: could not find implicit value for parameter num: scala.math.Numeric[AnyVal] (No implicit Ordering defined for AnyVal.)[0m
+[0m[[0m[31merror[0m] [0m[0m    }.sum)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
