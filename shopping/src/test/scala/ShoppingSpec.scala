@@ -4,7 +4,7 @@ import Main._
 
 class ShoppingSpec extends AnyFlatSpec with Matchers {
     
-    case class Price (price: Int, numForDeal: Int, priceForDeal: Int)
+    // case class Price (price: Int, numForDeal: Int, priceForDeal: Int)
     
     val prices = Map('a' -> Price(50, 3, 130), 
                      'b' -> Price(30, 2, 45), 
@@ -24,26 +24,47 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     it should "get the priceForDeal for 'a' " in {
         prices('a').priceForDeal shouldBe 130
     }
-    
-    
-    def priceForDeals (count: Int, things: Price): Int = {
-      (count / things.numForDeal) * things.priceForDeal
-    }
 
+    it should "not get the price for 'a'" in {
+        prices('b').priceForDeal should not be 130
+    }
+    
+    
+    
     behavior of "priceForDeals"
 
-    
-    it should "return the price for the deal" in {
+    it should "return the cost for the amount of deals" in {
         priceForDeals(3, prices('a')) shouldBe 130
         priceForDeals(4, prices('a')) shouldBe 130
-        priceForDeals(5, prices('a')) shouldBe 130
+        priceForDeals(10, prices('a')) shouldBe 390
     }
 
     it should "not return the price for the deal" in {
-        priceForDeals(6, prices('a')) should not be 130
+        priceForDeals(1, prices('a')) should not be 130
+    }
+
+
+    behavior of "priceForNoDeals" 
+
+    it should "return the price for left over item that didn't make the deal" in {
+        priceForNoDeals(4, prices('a')) shouldBe 50
+    }
+
+    it should "not return the price for left over item that didn't make the deal" in {
+        priceForNoDeals(4, prices('a')) should not be 130
+    }
+
+
+    behavior of "priceWhenItemHasNoDealValues" 
+
+    it should "return the price for a number of items that have no deal values" in {
+        priceWhenItemHasNoDealValues(3, prices('c')) shouldBe 60
     }
 
     
+
+
+    // MAYA Why do i need to include this function in my tests to get the below to pass?
     def checkItemIsValid (item: Char): Boolean = {
         prices.keySet.contains(item)
     }
@@ -57,4 +78,5 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     it should "return false" in {
         checkItemIsValid('x') shouldBe false
     }
+
 }

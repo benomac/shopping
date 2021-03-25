@@ -1,0 +1,34 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(~test, Some(3e1eed73-fd09-4294-854f-310a1c684016), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mShoppingSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mprices[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get the price for 'a'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get the numForDeal for 'a'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get the priceForDeal for 'a'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not get the price for 'a'[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mpriceForDeals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the cost for the amount of deals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not return the price for the deal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mpriceForNoDeals[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the price for left over item that didn't make the deal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not return the price for left over item that didn't make the deal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mpriceWhenItemHasNoDealValues[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the price for a number of items that have no deal values[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcheckItemIsValid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 111 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 25 Mar 2021, 16:51:01[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

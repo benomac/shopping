@@ -1,5 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:53:8: value chould is not a member of ShoppingSpec.this.ItWord[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:28:8: value shoul is not a member of ShoppingSpec.this.ItWord[0m
 [0m[[0m[31merror[0m] [0m[0mdid you mean should?[0m
-[0m[[0m[31merror[0m] [0m[0m    it chould "return true" in {[0m
+[0m[[0m[31merror[0m] [0m[0m    it shoul "not get the price for 'a'" in {[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
