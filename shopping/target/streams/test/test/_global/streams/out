@@ -1,6 +1,6 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@457a1eff, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@1cf5b2b, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mShoppingSpec:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mprices[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcosts[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should get the price for 'a'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should get the numForDeal for 'a'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should get the priceForDeal for 'a'[0m[0m
@@ -16,7 +16,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mcheckItemIsValid[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return false[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 111 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 135 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
