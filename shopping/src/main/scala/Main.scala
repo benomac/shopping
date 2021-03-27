@@ -25,51 +25,51 @@
       count * products.price
     }
 
-    //Check item is in the prices map
-    def checkItemIsValid (product: Char, products: Map[Char, Price]): Boolean = {
-        products.keySet.contains(product)
+    //Remove invalid items and print a warning message
+    def removeInvalidItems (items: String, products: Map[Char, Price]): String = {
+        val valid = for (item <- items) yield {
+            if(!prices.keySet.contains(item)) {
+                //unit to be returned, have as many as you want!!!!!
+                println(item  + " is an invalid item")
+                //final return item from for loop!!!
+                ""
+            } else {
+                item
+            }
+        }
+        valid.mkString("")
     }
 
-    //Display message if an invalid item is found
-    def displayMessageForInvalidItems (products: String): Unit = {
-      for (item <- products) {
-      if (!(checkItemIsValid(item, prices))) {
-        println(item + " is an invalid item.")
+    //Function to create the tobuy map
+    def createToBuyMap (items: String): Map[Char, Int] = {
+        (for {
+        x <- items
+        i = items.count(_ == x) 
+        } yield (x -> i)).toMap
+      } 
+
+    def total = 
+      println("Total " + {
+      for ((key,value) <- createToBuyMap(valid)) yield {
+          // add function to check  if item is valid 
+          if(prices(key).numForDeal == 0) {
+            (priceWhenItemHasNoDealValues(value, prices(key)))
+          } else {
+            priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))
+          }
         }
-      }   
-    }
+      }.sum)
     
-  
-    //Create var for items to buy
+    //Get the items to be bought
     val items = scala.io.StdIn.readLine("Enter items list eg: abcd :-")
-    
-    // Map of things to buy, check and discards any invalid items.
-   
-   // PUT EVERYTHING BELOW INTO FUNCTIONS 
-   // THEN PUT INTO THEIR OWN FILE
-   
-   val tobuy =
-    (for {
-      x <- items
-      i = items.count(_ == x) 
-      //function to check if item is valid.
-      if (checkItemIsValid(x, prices))
-    } yield (x -> i)).toMap
 
-    
-    displayMessageForInvalidItems(items)
-
+    //create a new string of valid items only.
+    val valid = removeInvalidItems(items, prices)
+   
     //Loop over tobuy map using item price data from prices
-    println("Total " + {
-    for ((key,value) <- tobuy) yield {
-        // add function to check  if item is valid 
-        if(prices(key).numForDeal == 0) {
-          (priceWhenItemHasNoDealValues(value, prices(key)))
-        } else {
-          priceForDeals(value, prices(key)) + priceForNoDeals(value, prices(key))
-        }
-      }
-    }.sum)
+    
+    //Final
+    total
 
-
+  //end
   }
