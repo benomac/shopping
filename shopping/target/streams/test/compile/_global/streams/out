@@ -1,14 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:75:25: not enough arguments for method checkItemIsValid: (item: Char, things: Map[Char,Main.Price]): Boolean.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter things.[0m
-[0m[[0m[31merror[0m] [0m[0m        checkItemIsValid('a' prices) shouldBe true[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:75:30: postfix operator prices needs to be enabled[0m
-[0m[[0m[31merror[0m] [0m[0mby making the implicit value scala.language.postfixOps visible.[0m
-[0m[[0m[31merror[0m] [0m[0m----[0m
-[0m[[0m[31merror[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
-[0m[[0m[31merror[0m] [0m[0mor by setting the compiler option -language:postfixOps.[0m
-[0m[[0m[31merror[0m] [0m[0mSee the Scaladoc for value scala.language.postfixOps for a discussion[0m
-[0m[[0m[31merror[0m] [0m[0mwhy the feature needs to be explicitly enabled.[0m
-[0m[[0m[31merror[0m] [0m[0m        checkItemIsValid('a' prices) shouldBe true[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:40:40: too many arguments (found 2, expected 1) for method removeInvalidItems: (items: String): String[0m
+[0m[[0m[31merror[0m] [0m[0m        removeInvalidItems("aaahhjca", costs) shouldBe "aaaca"[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:44:33: too many arguments (found 2, expected 1) for method removeInvalidItems: (items: String): String[0m
+[0m[[0m[31merror[0m] [0m[0m        removeInvalidItems("j", costs) shouldBe "j is an invalid item"[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

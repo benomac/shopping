@@ -7,9 +7,9 @@ object Main extends App {
 
   //create a new string of valid items only.
   val valid = removeInvalidItems(items, prices)
-
+  
   //Get the total cost   
-  println(total(valid, prices))
+  println("Total " + total(valid, prices))
 
-//end
-}
+
+};

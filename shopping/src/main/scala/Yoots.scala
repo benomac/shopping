@@ -25,7 +25,7 @@ object Yoots {
   //Remove invalid items and print a warning message
   def removeInvalidItems (items: String, products: Map[Char, Price]): String = {
       val valid = for (item <- items) yield {
-          if(!prices.keySet.contains(item)) {
+          if(!products.keySet.contains(item)) {
               //unit to be returned, have as many as you want!!!!!
               println(item  + " is an invalid item")
               //final return item from for loop!!!
@@ -44,19 +44,19 @@ object Yoots {
       i = items.count(_ == x) 
       } yield (x -> i)).toMap
     } 
-
-    def total(vals: String, prod: Map[Char, Price]): String = {
-      val tot = for ((key,value) <- createToBuyMap(vals)) yield {
-        // add function to check  if item is valid 
-        if(prices(key).numForDeal == 0) {
-          (priceWhenItemHasNoDealValues(value, prod(key)))
-        } else {
-          priceForDeals(value, prices(key)) + priceForNoDeals(value, prod(key))
-        }
-      }
-      val numTot = tot.sum
-      "Total " + numTot
-    }
   
-    
-}
+  //Get the total!
+  def total(vals: String, prod: Map[Char, Price]): Int = {
+    val tot = for ((key,value) <- createToBuyMap(vals)) yield {
+      // add function to check  if item is valid 
+      if(prices(key).numForDeal == 0) {
+        (priceWhenItemHasNoDealValues(value, prod(key)))
+      } else {
+        priceForDeals(value, prices(key)) + priceForNoDeals(value, prod(key))
+      }
+    }
+    tot.sum
+  }
+  
+   
+};

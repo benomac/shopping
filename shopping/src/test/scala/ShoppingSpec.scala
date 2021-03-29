@@ -1,6 +1,7 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import Main._
+import Yoots._
 
 class ShoppingSpec extends AnyFlatSpec with Matchers {
     
@@ -10,49 +11,22 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
                      'b' -> Price(30, 2, 45), 
                      'c' -> Price(20, 0, 0), 
                      'd' -> Price(15, 0, 0))
-
-    behavior of "costs"   
-
-    it should "get the price for 'a'" in {
-        costs('a').price shouldBe 50
-    }           
-
-    it should "get the numForDeal for 'a' " in {
-        costs('a').numForDeal shouldBe 3
-    }
-
-    it should "get the priceForDeal for 'a' " in {
-        costs('a').priceForDeal shouldBe 130
-    }
-
-    it should "not get the price for 'a'" in {
-        costs('b').priceForDeal should not be 130
-    }
-    
     
     
     behavior of "priceForDeals"
 
-    it should "return the cost for the amount of deals" in {
+    it should "return the cost for items that made the deal quantity" in {
         priceForDeals(3, costs('a')) shouldBe 130
-    }
-
-    it should "not return the price for the deal" in {
-        priceForDeals(1, costs('a')) should not be 130
     }
 
 
     behavior of "priceForNoDeals" 
 
-    it should "return the price for left over item that didn't make the deal" in {
+    it should "return the cost of remainder items that didn't make the deal quantity" in {
         priceForNoDeals(4, costs('a')) shouldBe 50
     }
 
-    it should "not return the price for left over item that didn't make the deal" in {
-        priceForNoDeals(4, costs('a')) should not be 130
-    }
-
-
+    
     behavior of "priceWhenItemHasNoDealValues" 
 
     it should "return the price for a number of items that have no deal values" in {
@@ -60,16 +34,31 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     }
 
     
+    behavior of "removeInvalidItems" 
 
-
-    behavior of "checkItemIsValid"
-
-    it should "return true" in {
-        checkItemIsValid('a', costs) shouldBe true
+    it should "return a string only of item in the costs map" in {
+        removeInvalidItems("aaajckla", costs) shouldBe "aaaca"
     }
 
-    it should "return false" in {
-        checkItemIsValid('x', costs) shouldBe false
+    //Is this test necessary?
+    it should "not blow up if an item is invalid" in {
+        removeInvalidItems("j", costs) shouldBe "" 
     }
 
+    
+    behavior of "createToBuyMap" 
+
+    it should "return a map of key: items, value: number of itmes" in {
+        createToBuyMap("aabbccaabb") shouldBe Map('a' -> 4, 'b' -> 4, 'c' -> 2)
+    }
+
+
+    behavior of "total" 
+
+    it should "return the total cost of the items 'aacba'" in {
+        total("aacba", costs) shouldBe 180
+    }
+       
+
+   
 }
