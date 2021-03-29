@@ -2,14 +2,13 @@ import Yoots._
 
 object Main extends App {
 
-  //Prrint original prices Map
+  //Prrint original prices Map.
   println(prices)
   
   prices = updatePriceMap(prices, 'a', 10, 2, 15)
-  prices = updatePriceMap(prices, 'g', 30, 2, 50)
-  prices = updatePriceMap(prices, 'h', 40, 2, 70)
   
-  //Print updated prices Map
+  
+  //Print updated prices Map.
   println(prices)
   
   //Get the items to be bought.
