@@ -1,14 +1,22 @@
 object Yoots {
     
-    case class Price (price: Int, numForDeal: Int, priceForDeal: Int)
+  //Create case class of items.
+  case class Price (price: Int, numForDeal: Int, priceForDeal: Int)
 
-  //Map of classes for item prices
-  val prices = Map('a' -> Price(50, 3, 130), 
+  //Map of classes for item prices.
+  var prices = Map('a' -> Price(50, 3, 130), 
                     'b' -> Price(30, 2, 45), 
                     'c' -> Price(20, 0, 0), 
                     'd' -> Price(15, 0, 0))
-    
-    def priceForDeals (count: Int, products: Price): Int = {
+  
+  //Use to add a new item or update exsiting item to prices map.
+  def updatePriceMap(newItems: Map[Char,Yoots.Price], product: Char, price: Int, numForDeal: Int, priceForDeal: Int): Map[Char,Yoots.Price] = {
+    newItems + (product -> Price(price, numForDeal, priceForDeal))
+  }
+  
+  
+  
+  def priceForDeals (count: Int, products: Price): Int = {
     (count / products.numForDeal) * products.priceForDeal
   }
 
@@ -59,4 +67,4 @@ object Yoots {
   }
   
    
-};
+}

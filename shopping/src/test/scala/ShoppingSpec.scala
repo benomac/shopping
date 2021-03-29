@@ -58,6 +58,10 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     it should "return the total cost of the items 'aacba'" in {
         total("aacba", costs) shouldBe 180
     }
+
+    // behavior of "updatePriceMap" 
+
+    // it should
        
 
    
