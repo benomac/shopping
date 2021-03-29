@@ -15,12 +15,12 @@ object Yoots {
   }
   
   
-  
+  //Get the price for items that added up to a dela, if they had one.
   def priceForDeals (count: Int, products: Price): Int = {
     (count / products.numForDeal) * products.priceForDeal
   }
 
-//   //Get the price for item that didnt make deal.
+  //Get the price for the remaining items that didnt make a deal, if they had one.
   def priceForNoDeals (count: Int, products: Price): Int = {
     (count % products.numForDeal) * products.price
   }

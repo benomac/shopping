@@ -2,9 +2,10 @@ import Yoots._
 
 object Main extends App {
 
-  //Prrint original prices Map.
+  //Print original prices Map.
   println(prices)
   
+   //GET INPUT FROM COMAND LINE ARGUMENTS INNIT!!!
   prices = updatePriceMap(prices, 'a', 10, 2, 15)
   
   
