@@ -1,27 +1,20 @@
 import Yoots._
 
-object Main extends App {
 
-  //Print original prices Map.
-  println(prices)
+object Main extends App {
   
-   //GET INPUT FROM COMAND LINE ARGUMENTS INNIT!!!
-  prices = updatePriceMap(prices, 'a', 10, 2, 15)
-  
-  
-  //Print updated prices Map.
-  println(prices)
-  
+  //Choose which price Map to use
+  val useThesePrices = decideWhichMapToUse(args)
+ 
   //Get the items to be bought.
   val items = scala.io.StdIn.readLine("Enter items list eg: abcd :-")
 
-  
   //create a new string of valid items only, 
   //and print error message for invalid items.
-  val valid = removeInvalidItems(items, prices)
-  
+  val valid = removeInvalidItems(items, useThesePrices)
+
   //Print the calculated total cost.   
-  println("Total " + total(valid, prices))
+  println("Total " + total(valid, useThesePrices))
 
 
 };
