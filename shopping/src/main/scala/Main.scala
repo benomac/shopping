@@ -1,11 +1,14 @@
 import Yoots._
-
-
+import scala.collection.mutable.ArrayBuffer
 object Main extends App {
+  
+
+ 
+  //CHECL IF THE MAP IS EMPTY SOMEHOWW!!!!!
   
   //Choose which price Map to use
   val useThesePrices = decideWhichMapToUse(args)
- 
+  println(useThesePrices.isEmpty)
   //Get the items to be bought.
   val items = scala.io.StdIn.readLine("Enter items list eg: abcd :-")
 

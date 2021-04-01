@@ -1,4 +1,5 @@
 import Main._
+
 object Yoots {
     
   //Create case class of items.
@@ -25,13 +26,15 @@ object Yoots {
     splitList
   }
 
+  
   //Make the newItems Map.
   def createTheNewItemsMap(arr: Array[Array[String]]): Map[Char,Yoots.Price] = {
-    val mapped = (for {
+    val map = (for {
       i <- arr
+      if (i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit) 
       x = Price(i(1).toInt, i(2).toInt, i(3).toInt)
       } yield (i(0)(0) -> x)).toMap
-      mapped
+      map
   }
 
   //Choose correct Map, coded or command line entered.
@@ -42,7 +45,11 @@ object Yoots {
       val newItemsSplit = getArgsAndSplit(args)
       val splitNewItems = getSplitArgsAndSplitAgain(newItemsSplit)
       val mapped = createTheNewItemsMap(splitNewItems)
-      mapped
+      if(mapped.isEmpty) {
+        prices
+      } else {
+        mapped
+      }
     }
   }
   
