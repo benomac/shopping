@@ -29,13 +29,15 @@ object Yoots {
   
   //Make the newItems Map.
   def createTheNewItemsMap(arr: Array[Array[String]]): Map[Char,Yoots.Price] = {
-    val map = (for {
+    (for {
       i <- arr
+        _ = if (!(i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit))
+          println(i(0).charAt(0), " incorrect format")
       if (i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit) 
-      x = Price(i(1).toInt, i(2).toInt, i(3).toInt)
+        x = Price(i(1).toInt, i(2).toInt, i(3).toInt)
       } yield (i(0)(0) -> x)).toMap
-      map
-  }
+    }
+  
 
   //Choose correct Map, coded or command line entered.
   def decideWhichMapToUse(args: Array[String]): Map[Char,Yoots.Price] = {

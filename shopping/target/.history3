@@ -211,3 +211,12 @@
 1617291728813:~run hsghbad
 1617291737539:~run "f 10 2 15"
 1617291763006:~run hsghbad gesfds
+1617352109861:~run
+1617352561650:~run hsghbad gesfds
+1617352580345:~run "f 10 2 15,g 20 k j"
+1617352598906:~run "f 10 2 15,g 20 k j,g 20 k j"
+1617390843805:~run hsghbad gesfds
+1617391417516:~run "f 10 2 15,g 20 k j,g 20 k j"
+1617391563429:~run "f 10 2 15,g 20 k j,' [0 k j"
+1617401667577:~run hsghbad gesfds
+1617402048634:~run "f 10 2 15,g 20 k j,' [0 k j"
