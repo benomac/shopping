@@ -33,15 +33,18 @@ object Yoots {
       i <- arr
         _ = if (!(i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit))
           println("Item " + "'" + i(0).charAt(0) + "'" + """| has been entered with the incorrect format!""".stripMargin)
-        if (i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit)
+        else () 
         x = Price(i(1).toInt, i(2).toInt, i(3).toInt)
       } yield (i(0)(0) -> x)).toMap
     }
+
+
+    //THIS WORKS!!????
     // (for {
     //   i <- arr
     //     _ = if (!(i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit))
     //       println("Item " + "'" + i(0).charAt(0) + "'" + """| has been entered with the incorrect format!""".stripMargin)
-    //     else () 
+    //     if (i.length == 4 && i(1).charAt(0).isDigit && i(2).charAt(0).isDigit && i(3).charAt(0).isDigit)
     //     x = Price(i(1).toInt, i(2).toInt, i(3).toInt)
     //   } yield (i(0)(0) -> x)).toMap
     // }
