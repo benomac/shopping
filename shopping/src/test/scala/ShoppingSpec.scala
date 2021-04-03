@@ -59,11 +59,9 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
         total("aacba", costs) shouldBe 180
     }
 
-    behavior of "updatePriceMap" 
-
-    it should "return an updated  map of costs" in {
-        updatePriceMap(costs, 'a', 10, 2, 15) shouldBe Map('a' -> Price(10,2,15), 'b' -> Price(30,2,45), 'c' -> Price(20,0,0), 'd' -> Price(15,0,0))
+    behavior of "getArgsAndSplit" in {
         
+        getArgsAndSplit(Array("f 10 2 15,g 20 k j,' [0 k j")) shouldBe 
     }
        
 

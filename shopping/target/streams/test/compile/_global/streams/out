@@ -1,16 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:65:61: ambiguous reference to overloaded definition,[0m
-[0m[[0m[31merror[0m] [0m[0mboth method a in trait Matchers of type [T](implicit evidence$5: scala.reflect.ClassTag[T]): org.scalatest.matchers.dsl.ResultOfATypeInvocation[T][0m
-[0m[[0m[31merror[0m] [0m[0mand  value a in trait Matchers of type ShoppingSpec.this.AWord[0m
-[0m[[0m[31merror[0m] [0m[0mmatch expected type ?[0m
-[0m[[0m[31merror[0m] [0m[0m        updatePriceMap(prices, 'a', 10, 2, 15) shouldBe Map(a -> Price(10,2,15), b -> Price(30,2,45), c -> Price(20,0,0), d -> Price(15,0,0))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:65:82: not found: value b[0m
-[0m[[0m[31merror[0m] [0m[0m        updatePriceMap(prices, 'a', 10, 2, 15) shouldBe Map(a -> Price(10,2,15), b -> Price(30,2,45), c -> Price(20,0,0), d -> Price(15,0,0))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:65:103: not found: value c[0m
-[0m[[0m[31merror[0m] [0m[0m        updatePriceMap(prices, 'a', 10, 2, 15) shouldBe Map(a -> Price(10,2,15), b -> Price(30,2,45), c -> Price(20,0,0), d -> Price(15,0,0))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:65:123: not found: value d[0m
-[0m[[0m[31merror[0m] [0m[0m        updatePriceMap(prices, 'a', 10, 2, 15) shouldBe Map(a -> Price(10,2,15), b -> Price(30,2,45), c -> Price(20,0,0), d -> Price(15,0,0))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:62:35: value in is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    behavior of "getArgsAndSplit" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
