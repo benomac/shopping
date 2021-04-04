@@ -52,18 +52,21 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
         createToBuyMap("aabbccaabb") shouldBe Map('a' -> 4, 'b' -> 4, 'c' -> 2)
     }
 
+    // behavior of "total" 
 
-    behavior of "total" 
+    // it should "return the total cost of the items 'aacba'" in {
+    //     total("aacba", costs) shouldBe 180
+    // }
 
-    it should "return the total cost of the items 'aacba'" in {
-        total("aacba", costs) shouldBe 180
+    behavior of "getArgsAndSplit" 
+    
+    it should "return a split list from args array" in {
+        getArgsAndSplit(Array("f 10 2 15,e 50 d 140")) shouldBe Array("f 10 2 15", "e 50 d 140")
     }
-
-    behavior of "getArgsAndSplit" in {
-        
-        getArgsAndSplit(Array("f 10 2 15,g 20 k j,' [0 k j")) shouldBe 
+    
+    it should "return new map" in {
+        createTheNewItemsMap(Array("f 10 2 15", "e 50 d 140")) shouldBe 'f' -> Price(10, 2, 15)
     }
-       
-
-   
+    
+    
 }

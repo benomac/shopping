@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:62:35: value in is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    behavior of "getArgsAndSplit" in {[0m
-[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:58:38: Cannot prove that Int <:< AnyRef.[0m
+[0m[[0m[31merror[0m] [0m[0m        total(valid, useThesePrices) shouldBe null[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
