@@ -63,9 +63,18 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     it should "return a split list from args array" in {
         getArgsAndSplit(Array("f 10 2 15,e 50 d 140")) shouldBe Array("f 10 2 15", "e 50 d 140")
     }
+
+    behavior of "getArgsAndSplitAgain" 
+    it should "return a split list from args array" in {
+        getSplitArgsAndSplitAgain(Array("f 10 2 15", "e 50 d 140")) shouldBe  Array(Array("f", "10", "2", "15"), Array("e", "50", "d", "140"))
+    }
     
     it should "return new map" in {
-        createTheNewItemsMap(Array("f 10 2 15", "e 50 d 140")) shouldBe 'f' -> Price(10, 2, 15)
+        createTheNewItemsMap(Array(Array("f", "10", "2", "15"), Array("e", "50", "d", "140"))) shouldBe Map('f' -> Price(10,2,15))
+    }
+
+    it should "return an empty map" in {
+        createTheNewItemsMap(Array(Array("f", "10", "a", "15"), Array("e", "50", "d", "140"))) shouldBe Map()
     }
     
     

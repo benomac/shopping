@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(7a042944-84fe-46e3-9675-2fcb1fc829f5), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run "f 10 2 15,g 20 k j,' [0 k j", None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/benomac/code/scala/shopping/shopping/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Yoots.scala:54:9: not found: value x[0m
+[0m[[0m[31merror[0m] [0m[0m        x = Price(i(1).toInt, i(2).toInt, i(3).toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Yoots.scala:55:17: Any does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m      } yield (i(0)(0) -> x)).toMap[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/main/scala/Yoots.scala:55:27: not found: value x[0m
+[0m[[0m[31merror[0m] [0m[0m      } yield (i(0)(0) -> x)).toMap[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 4 Apr 2021, 12:27:11[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m

@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@57bdda4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@6fd5222a, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mShoppingSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mpriceForDeals[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the cost for items that made the deal quantity[0m[0m
@@ -11,27 +11,16 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should not blow up if an item is invalid[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcreateToBuyMap[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a map of key: items, value: number of itmes[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mtotal[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should return the total cost of the items 'aacba' *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.NullPointerException: Cannot invoke "scala.collection.immutable.Map.apply(Object)" because the return value of "Main$.useThesePrices()" is null[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at Yoots$.$anonfun$total$2(Yoots.scala:114)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at Yoots$.$anonfun$total$2$adapted(Yoots.scala:112)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.Iterator$$anon$9.next(Iterator.scala:575)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List.prependedAll(List.scala:153)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List$.from(List.scala:651)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.List$.from(List.scala:648)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.IterableFactory$Delegate.from(Factory.scala:288)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Iterable$.from(Iterable.scala:35)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.immutable.Iterable$.from(Iterable.scala:32)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.collection.IterableOps$WithFilter.map(Iterable.scala:885)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mgetArgsAndSplit[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a split list from args array[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 103 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetArgsAndSplitAgain[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a split list from args array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return new map[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty map[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 130 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 7, failed 1, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	ShoppingSpec[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ShoppingSpec[0m
