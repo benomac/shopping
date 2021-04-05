@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:69:5: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/benomac/code/scala/shopping/shopping/src/test/scala/ShoppingSpec.scala:82:5: '}' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m// }[0m
 [0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

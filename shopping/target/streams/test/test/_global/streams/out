@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@6fd5222a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ShoppingSpec, org.scalatest.tools.Framework$$anon$1@415cc71e, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mShoppingSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mpriceForDeals[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the cost for items that made the deal quantity[0m[0m
@@ -11,16 +11,20 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should not blow up if an item is invalid[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcreateToBuyMap[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a map of key: items, value: number of itmes[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtotal[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the total cost of the items 'aacba'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mgetArgsAndSplit[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a split list from args array[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mgetArgsAndSplitAgain[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a split list from args array[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcreateTheNewItemsMap[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return new map[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty map[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 130 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mdecideWhichMapToUse[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 109 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 11[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 11, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ShoppingSpec[0m

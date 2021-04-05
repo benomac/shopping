@@ -40,7 +40,7 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
         removeInvalidItems("aaajckla", costs) shouldBe "aaaca"
     }
 
-    //Is this test necessary?
+    
     it should "not blow up if an item is invalid" in {
         removeInvalidItems("j", costs) shouldBe "" 
     }
@@ -52,11 +52,11 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
         createToBuyMap("aabbccaabb") shouldBe Map('a' -> 4, 'b' -> 4, 'c' -> 2)
     }
 
-    // behavior of "total" 
+    behavior of "total" 
 
-    // it should "return the total cost of the items 'aacba'" in {
-    //     total("aacba", costs) shouldBe 180
-    // }
+    it should "return the total cost of the items 'aacba'" in {
+        total("aacba", costs) shouldBe 180
+    }
 
     behavior of "getArgsAndSplit" 
     
@@ -65,17 +65,27 @@ class ShoppingSpec extends AnyFlatSpec with Matchers {
     }
 
     behavior of "getArgsAndSplitAgain" 
+
     it should "return a split list from args array" in {
         getSplitArgsAndSplitAgain(Array("f 10 2 15", "e 50 d 140")) shouldBe  Array(Array("f", "10", "2", "15"), Array("e", "50", "d", "140"))
     }
+
+    behavior of "createTheNewItemsMap" 
     
     it should "return new map" in {
         createTheNewItemsMap(Array(Array("f", "10", "2", "15"), Array("e", "50", "d", "140"))) shouldBe Map('f' -> Price(10,2,15))
     }
 
     it should "return an empty map" in {
-        createTheNewItemsMap(Array(Array("f", "10", "a", "15"), Array("e", "50", "d", "140"))) shouldBe Map()
+        createTheNewItemsMap(Array(Array("f", "10", "a", "15"), Array("e", "50", "140"))) shouldBe Map()
     }
     
-    
+
+    behavior of "decideWhichMapToUse" 
+
+    it should "return prices map"
+        decideWhichMapToUse(Array("f 10 a 15,e 50 d 140")) shouldBe costs
+
+    it should "return new price map"
+        decideWhichMapToUse(Array("f 10 2 15,e 50 d 140")) shouldBe  Map('f' -> Price(10,2,15))
 }
