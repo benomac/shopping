@@ -32,9 +32,9 @@ We expect to be able to run your solution as a command line application.
 
 ### Running from **sbt shell**:- ###
 
-~run - For hard coded prices.
+`~run` - For hard coded prices.
 
-~run "e 30 0 0,f 20 2 30,g 30 4 100" - To create new price list.
+`~run "e 30 0 0,f 20 2 30,g 30 4 100"` - To create new price list.
 
 ### Entering items to buy:- ###
 
