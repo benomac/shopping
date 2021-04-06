@@ -38,7 +38,7 @@ We expect to be able to run your solution as a command line application.
 
 ### Entering items to buy:- ###
 
-When prompeted enter all items as one string, anything not in the prices Map will be treated as an invalid item.
+When prompeted enter all items as one string, for example, `aabaca`. Anything not in the prices Map will be treated as an invalid item.
 
 
 Thanks for taking the time to have a look.
