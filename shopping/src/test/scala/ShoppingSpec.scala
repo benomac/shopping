@@ -5,8 +5,6 @@ import Yoots._
 
 class ShoppingSpec extends AnyFlatSpec with Matchers {
     
-    // case class Price (price: Int, numForDeal: Int, priceForDeal: Int)
-    
     val costs = Map('a' -> Price(50, 3, 130), 
                      'b' -> Price(30, 2, 45), 
                      'c' -> Price(20, 0, 0), 
