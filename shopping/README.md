@@ -31,6 +31,7 @@ We expect to be able to run your solution as a command line application.
 `sbt 'run "e 30 0 0,f 20 2 30,g 30 4 100"'` - This will create a completely new Map of prices to select from. The correct formatting is important, any incorrect formatting will not be included in the new Map of prices, and display an error message. If there are no correcltly formatted prices, the programme will revert back to the hard coded prices.
 
 ### Running from **sbt shell**:- ###
+### Running from the **command line**:- ###
 
 `~run` - For hard coded prices.
 
